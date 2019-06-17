@@ -1,0 +1,26 @@
+.header {
+  background: #282d30;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+.header__image {
+  position: absolute;
+  margin-top: 5px;
+  width: 500px;
+  height: 100%;
+}
+.header__title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .header__image {
+    width: 100%px;
+  }
+}

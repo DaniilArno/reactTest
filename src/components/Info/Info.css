@@ -1,0 +1,156 @@
+.info__title {
+  font-size: 20px;
+  font-weight: bold;
+  border-left: 3px solid #8b9497;
+  text-transform: uppercase;
+  padding-left: 15px;
+  height: 18px;
+  line-height: 18px;
+}
+.info__title_marginBottom {
+  margin-bottom: 25px;
+}
+
+.table__cell {
+  background: #c4092f;
+  color: #fff;
+  font-size: 15px;
+}
+.table__title {
+  font-size: 15px;
+	font-weight: 300;
+	max-width: 210px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table__description {
+  font-size: 13px;
+  font-weight: 300;
+  color: #929b9d;
+}
+th {
+  padding:  0 15px;
+  text-align: center;
+  height: 45px;
+  font-weight: 500;
+}
+th:first-child {
+  text-align: left;
+}
+td {
+  padding:  10px 10px;
+  text-align: center;
+  /* background: #f5f6f6; */
+  font-weight: 300;
+}
+tbody {
+	background: #f5f6f6;
+}
+td:first-child {
+  text-align: left;
+}
+td:last-child {
+	padding-right: 8px; 
+}
+tr {
+  border-bottom: 1px solid #e6e9ea;
+}
+tr:last-child {
+  border-bottom: 0px;
+}
+.table__color {
+	margin: auto;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+table {
+  margin-bottom: 330px;
+  width: 100%;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+.button_delete {
+  color: #99a1a4;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.button_delete:hover {
+  background: #282d30;
+  color: #fff;
+}
+.info {
+	position: relative;
+}
+.button_add {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: -50px;
+	color: #99a1a4;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.button_add:hover {
+  background: #282d30;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.table__title {
+		font-size: 15px;
+		font-weight: 300;
+		max-width: auto;
+		overflow: hidden;
+		text-overflow: inherit;
+		white-space: normal;
+	}
+	thead {
+		display: none;
+	}
+	.button_delete {
+		color: #fff;
+		background: #282d30;
+	}
+	.button_delete:hover {
+		background: #282d30;
+		color: #99a1a4;
+	}
+	tr {    
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	td:nth-child(2n+1) {
+		align-self: flex-start;
+		order: -1;
+		width: 33%;
+	}
+	td {
+		flex:  1 1 1 1 1;
+	}
+	.info__title {
+		display: none;
+	}
+	.form {
+		margin-bottom: 50px;
+	}
+}

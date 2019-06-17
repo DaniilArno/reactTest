@@ -1,0 +1,21 @@
+body  {
+  font-family: 'Roboto', sans-serif;
+}
+*:focus {
+  outline: none;
+}
+.btn-primary,.btn-primary:hover {
+  border-color: transparent; 
+}
+button:focus { outline: none; }
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
